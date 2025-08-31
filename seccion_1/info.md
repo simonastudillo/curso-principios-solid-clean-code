@@ -11,3 +11,14 @@
 3. No es para aprender JavaScript.
 4. El conocimiento se puede aplicar a cualquier lenguaje.
 5. Los principios de diseño y arquitectura son independientes del lenguaje.
+
+# Instalaciones necesarias
+
+1. Node.js (versión 16 o superior)
+2. yarn global
+
+```bash
+npm install --global yarn
+```
+
+3. Typescript importer (plugin)
