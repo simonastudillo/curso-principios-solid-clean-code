@@ -1,0 +1,37 @@
+# EJEMPLO DE GITIGNORE
+# Extension for Visual Studio Code
+sftp.json
+
+# SQL
+*.sql
+# Temporary files
+*.tmp
+# Backup files
+*.bak
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Compressed files
+*.zip
+*.gz
+*.rar
+
+# Node.js dependencies
+node_modules/
+# Build output
+dist/
+# Logs
+*.log
+# Environment variables
+.env
+env.php
+# Dependency directories
+bower_components/
+# IDE specific files
+.idea/
+
+# Excel files
+*.xlsx
+*.xls
+*.csv
