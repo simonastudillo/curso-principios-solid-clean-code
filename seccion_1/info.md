@@ -27,3 +27,21 @@ npm install --global yarn
 
 1. **Clean JavaScript** de Miguel A. Gómez
 2. **Refactoring Guru** de Khmelnitske shosse
+
+# Preparación del laboratorio de ejercicios.
+
+Repositorio de referencia aquí:
+[curso-principios-solid-clean-code](https://github.com/Klerith/clean-course/tree/main#)
+
+1. Clonar el repositorio
+2. Instalar las dependencias
+
+```bash
+yarn install
+```
+
+3. Iniciar el entorno de desarrollo
+
+```bash
+yarn dev
+```
