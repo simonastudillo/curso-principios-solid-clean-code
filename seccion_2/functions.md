@@ -3,10 +3,19 @@
 > "Sabemos que estamos desarrollando código limpio cuando cada función hace
 > exactamente lo que su nombre indica". - Ward Cunningham
 
+- Simplicidad es fundamental.
+- Funciones de tamaño reducido.
+- Funciones de una sola línea sin causar complejidad. Sin embargo se debe
+  priorizar legibilidad antes de la concisión.
+- Menos de 20 líneas de código.
+- Evita el uso del "else".
+- Prioriza el uso de la condicional ternaria.
+- No deberían haber muchas identaciones.
+
 Ejemplos
 
 ```javascript
-function sendEamil(): boolean {
+function sendEmail(): boolean {
 
    // verificar si el usuario existe
 
