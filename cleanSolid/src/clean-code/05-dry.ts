@@ -6,11 +6,25 @@ class Product {
       public size: Size = ''
    ){}
 
+   isProductReady(): boolean {
+      for (const property in this) {
+         switch ( typeof this[property] ) {
+            case 'string':
+               if ( this[property].length === 0 ) throw Error(`${property} is empty`);
+               break;
+            case 'number':
+               if ( this[property] <= 0 ) throw Error(`${property} is invalid`);
+               break;
+            default:
+               throw Error(`${typeof this[property]} is not supported`);
+         }
+      }
+      return true;
+   }
+
    toString() {
-      // NO DRY
-      if (this.name.length <= 0) throw Error('Name is empty');
-      if (this.price <= 0) throw Error('Price is invalid');
-      if (this.size.length <= 0) throw Error('Size is empty');
+      if ( !this.isProductReady() ) return;
+
       return `${this.name} (${this.price}), ${this.size }`;
    }
 }
