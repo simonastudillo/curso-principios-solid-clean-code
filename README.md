@@ -9,3 +9,9 @@ El curso fue actualizado en Agosto del 2023
 Puedes ver el contenido de esta sección en el siguiente enlace:
 
 [Sección 1 - Introducción](https://github.com/simonastudillo/curso-principios-solid-clean-code/blob/main/seccion_1/info.md)
+
+### Sección 2 - Clean code y deuda técnica
+
+Puedes ver el contenido de esta sección en el siguiente enlace:
+
+[Sección 2 - Clean code y deuda técnica](https://github.com/simonastudillo/curso-principios-solid-clean-code/blob/main/seccion_2/info.md)
