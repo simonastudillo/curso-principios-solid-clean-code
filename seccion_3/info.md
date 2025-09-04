@@ -37,3 +37,19 @@
   - Métodos privados.
   - Métodos de instancia ordenados de mayor a menor importancia.
   - Getters y Setters.
+
+# Comentarios en el código
+
+> "No comentes el código mal escrito, reescríbelo" - Brian W. Kernighan
+
+Evita usar comentarios pero:
+
+Cuando usamos librerías de terceros, APIS, frameworks, etc. nos encontramos ante
+situaciones en las que escribir un comentario será mejor que dejar una solución
+compleja o un hack sin explicación. Los comentarios deberían de ser la
+excepción, no la regla.
+
+**Recuerda:** Nuestro código debe de ser suficientemente auto explicativo,
+**Pero a veces es necesario comentarlo.**
+
+Los comentarios deben de explicar el "por qué" en lugar del "qué" o "cómo".
