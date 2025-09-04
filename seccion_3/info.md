@@ -13,3 +13,27 @@
   mismo y necesita ser refactorizado.
 - Los comentarios de deben de explicar "que hace" si no más bien "porque lo
   hace".
+
+# Estructura de Clases
+
+> "El buen código parece estar escrito por alguien a quien le importa" - Michael
+> Feathers
+
+- El ideal es que todo el equipo de trabajo cree las clases de la misma manera.
+- Es importante que todas nuestras clases tengan una estructura similar para
+  facilitar su comprensión y mantenimiento.
+
+## Lista recomendada
+
+- Comenzar con la lista de propiedades
+  - Propiedades státicas.
+  - Propiedades públicas.
+  - Propiedades privadas.
+  - Propiedades protegidas.
+- Métodos
+  - Constructores estáticos.
+  - Constructor.
+  - Métodos estáticos.
+  - Métodos privados.
+  - Métodos de instancia ordenados de mayor a menor importancia.
+  - Getters y Setters.
