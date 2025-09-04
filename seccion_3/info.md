@@ -53,3 +53,44 @@ excepción, no la regla.
 **Pero a veces es necesario comentarlo.**
 
 Los comentarios deben de explicar el "por qué" en lugar del "qué" o "cómo".
+
+# Uniformidad en el proyecto.
+
+Problemas similares, soluciones similares.
+
+Debemos respetar la nomenclatura en el nombramiento de archivo, clases, métodos
+y variables.
+
+Ejemplo:
+
+```javascript
+const createProduct = () => {
+};
+
+const updateProduct = () => {
+};
+
+const deleteProduct = () => {
+};
+```
+
+```javascript
+const createNewUser = () => {
+};
+
+const modifyUser = () => {
+};
+
+const removeUser = () => {
+};
+```
+
+En el segundo bloque de código, se está usando una nomenclatura diferente a la
+primera, esto no debería de ocurrir.
+
+Es importante mantener la nomenclatura consistente en los directorios y
+archivos.
+
+Tambien es importante mantener un estandar de identación en todos los archivos,
+esto se debe de acordar con el equipo de trabajo o por proyecto para mantener el
+estandar en todo el código.
