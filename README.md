@@ -21,3 +21,9 @@ Puedes ver el contenido de esta sección en el siguiente enlace:
 Puedes ver el contenido de esta sección en el siguiente enlace:
 
 [Sección 3 - Clean code - Clases y comentarios](https://github.com/simonastudillo/curso-principios-solid-clean-code/blob/main/seccion_3/info.md)
+
+### Sección 4 - Acrónimo STUPID
+
+Puedes ver el contenido de esta sección en el siguiente enlace:
+
+[Sección 4 - Acrónimo STUPID](https://github.com/simonastudillo/curso-principios-solid-clean-code/blob/main/seccion_4/info.md)

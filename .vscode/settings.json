@@ -20,5 +20,6 @@
    "workbench.statusBar.visible": true,
    "diffEditor.wordWrap": "on",
    "editor.accessibilitySupport": "off",
-   "editor.wordWrap": "on"
+   "editor.wordWrap": "on",
+   "editor.autoIndentOnPaste": true,
 }
