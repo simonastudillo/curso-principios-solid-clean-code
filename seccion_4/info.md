@@ -1,15 +1,24 @@
 # Acrónimo STUPID
 
-STUPID es un acrónimo que representa una serie de principios que deben evitarse
-en el desarrollo de software. Estos principios son:
+STUPID es un acrónimo que representa una serie de principios tambien llamados
+"code smells" que deben evitarse en el desarrollo de software:
 
-- **S**: Single Responsibility Principle (SRP) - Principio de Responsabilidad
-  Única
-- **T**: Tight Coupling - Acoplamiento Fuerte
-- **U**: Unnecessary Complexity - Complejidad Innecesaria
-- **P**: Premature Optimization - Optimización Prematura
-- **I**: Inappropriate Intimacy - Intimidad Inadecuada
-- **D**: Duplication - Duplicación
+- **S**: Singleton => Patrón singleton.
+- **T**: Tight Coupling => Alto acoplamiento.
+- **U**: Untestability => Código no probable (unit test)
+- **P**: Premature optimization => Optimización prematura.
+- **I**: Indescriptive Naming => Nombres poco descriptivos.
+- **D**: Duplication => Duplicidad de código, no aplicar el principio DRY.
 
-Cada uno de estos principios se opone a los principios SOLID y debe ser evitado
-para mantener un código limpio y mantenible.
+## Patrón singleton
+
+- **PROS**
+
+- Garantiza una única instancia de la clase a lo largo de toda la aplicación.
+
+- **CONS**
+
+- Vive en el contexto global.
+- Puede ser modificado por cualquiera y en cualquier momento.
+- No es rastreable.
+- Difícil de testear debido a su ubicación.
