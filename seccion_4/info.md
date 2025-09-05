@@ -118,3 +118,34 @@ de código:
 - Código luce similar pero cumple funciones distintas.
 - Cuando hay un cambio, sólo hay que modificar un sólo lugar.
 - Este tipo de duplicidad se puede trabajar con parámetros u optimizaciones.
+
+## "Code Smells" extras.
+
+### Inflación
+
+- Cuando un método contiene demasiadas lineas de código, por lo general de más
+  de 10 lineas se debe considerar refactorizar. Esto es porque por lo general
+  con el tiempo las funciones y métodos tienden a crecer en complejidad y
+  tamaño, lo que puede dificultar su comprensión y mantenimiento.
+  - Hay que buscar la forma de crear sub-métodos.
+- Clases muy grandes y con el tiempo van creciendo.
+  - Hay que buscar la forma de dividirlas en clases más pequeñas y enfocadas.
+
+### Obsesión primitiva
+
+- Se refiere a la tendencia de utilizar tipos de datos primitivos (como enteros,
+  cadenas, booleanos, etc.) en lugar de crear tipos de datos más ricos y
+  expresivos que encapsulen la lógica y el comportamiento relacionados.
+  - Si tiene una gran cantidad de variables de datos primitivos posiblemente se
+    pueden agrupar a una nueva clase, función o módulo.
+
+### Lista larga de parámetros
+
+- Más de 3 o 4 argumentos en un método. Una lista larga de parámetros puede
+  dificultar la comprensión y el uso del método.
+- Las listas largas de parámetros pueden ser un sintoma de forzar a un método
+  haga más de lo que debería rompiendo el principio de responsabilidad única.
+  - Se puede considerar la creación de un objeto que encapsule todos los
+    parámetros relacionados.
+  - Se puede considerar crear sub-métodos que manejen grupos de parámetros
+    relacionados.
