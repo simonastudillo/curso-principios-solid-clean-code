@@ -64,3 +64,57 @@ cuán relacionadas o dependientes son dos clases o módulos entre sí.
   es amplia, no se enfoca en lo que debe hacer.
 - Alta cohesión significa que la clase se enfoca en lo que debería estar
   haciendo, es decir, solo métodos relacionados con la intención de la clase.
+
+## Código no probable
+
+Código difícilmente testeable
+
+- Código con alto acoplamiento.
+- Código con muchas dependencias no inyectadas.
+- Dependencias en el contexto global (Tipo Singleton).
+
+> Debemos de tener en mente las pruebas desde la creación del código.
+
+## Optimizaciones prematuras
+
+- Mantener abiertas las opciones retrasando la toma de decisiones nos permite
+  darle mayor relevancia a lo que es más importante en una aplicación.
+- No debemos anticiparnos a los requisitos y desarrollar abstracciones
+  innecesarias que puedan añadir complejidad accidental.
+
+### Complejidad accidental
+
+Cuando implementamos una solución compleja a la mínima indispensable.
+
+### Complejidad esencial
+
+La complejidad es inherente al problema.
+
+Se debe de buscar un equilibrio entre ambas.
+
+## Nombres poco descriptivos.
+
+- Nombre de variables mal nombradas.
+- Nombres de clases genéricas.
+- Nombres de funciones mal nombradas.
+- Ser muy específico (puede ser muy largo y difícil de entender) o demasiado
+  genérico (da lugar a confusiones sobre lo que hace).
+
+## Duplicidad de código
+
+No aplicar el principio DRY (Don't Repeat Yourself). Hay 2 tipos de duplicidad
+de código:
+
+### Real
+
+- Código es idéntico y cumple la misma función.
+- Un cambio implicaría actualizar todo el código idéntico en varios lugares.
+- Incrementa las posibilidades de error humano al olvidar una parte para
+  actualizar.
+- Mayor cantidad de pruebas innecesarias.
+
+### Accidental
+
+- Código luce similar pero cumple funciones distintas.
+- Cuando hay un cambio, sólo hay que modificar un sólo lugar.
+- Este tipo de duplicidad se puede trabajar con parámetros u optimizaciones.
