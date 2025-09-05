@@ -149,3 +149,40 @@ de código:
     parámetros relacionados.
   - Se puede considerar crear sub-métodos que manejen grupos de parámetros
     relacionados.
+
+## Acopladores
+
+Todos los "olores" de este grupo (acopladores) contribuyen al acoplamiento
+excesivo entre clases o muestran lo que sucede si el acoplamiento se reemplaza
+por una delegación excesiva.
+
+### Feature Envy (Envidia de alguna característica)
+
+Un método accede a los datos de otro objeto en lugar de utilizar sus propios
+datos. Esto puede ser un indicativo de que el método debería estar en la otra
+clase.
+
+### Inappropriate Intimacy (Intimidad inapropiada)
+
+Cuando una clase usa campos y metodos internos de otra clase. Esto puede ser un
+indicativo de que las clases están demasiado acopladas y deberían ser más
+independientes.
+
+Las buenas clases deben de saber lo menos posible de otras clases, esto las hace
+más faciles de mantener y reutilizar.
+
+### Message Chains (Cadenas de mensajes)
+
+El sintoma es cuando tenemos una función "A" que llama a "B" que a su vez llama
+a "C". Esto puede ser un indicativo de que la lógica de negocio está demasiado
+distribuida y debería ser encapsulada en una sola clase o método.
+
+Se debe de buscar la forma de reducir la cadena, haciendo que "A" pueda llamar
+directamente a "C" sin necesidad de pasar por "B".
+
+### The middle man (El hombre del medio)
+
+Si una clase realiza una sola acción y esa acción es delegar el trabajo a otra
+clase ¿Por que existe esa clase?.
+
+Las clases deben de evitar tener puntos intermedios.
