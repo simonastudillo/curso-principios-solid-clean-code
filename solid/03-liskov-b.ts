@@ -1,47 +1,72 @@
+export abstract class Car {
 
+   abstract getNumberOfSeats(): number;
+}
 
-export class Tesla {
+export class Tesla extends Car {
 
-   constructor(private numberOfSeats: number) { }
+   constructor(private numberOfSeats: number) {
+      super();
+   }
 
-   getNumberOfTeslaSeats() {
+   getNumberOfSeats() {
       return this.numberOfSeats;
    }
 }
 
-export class Audi {
+export class Audi extends Car {
 
-   constructor(private numberOfSeats: number) { }
+   constructor(private numberOfSeats: number) {
+      super();
+   }
 
-   getNumberOfAudiSeats() {
+   getNumberOfSeats() {
       return this.numberOfSeats;
    }
 }
 
-export class Toyota {
+export class Toyota extends Car {
 
-   constructor(private numberOfSeats: number) { }
+   constructor(private numberOfSeats: number) {
+      super();
+   }
 
-   getNumberOfToyotaSeats() {
+   getNumberOfSeats() {
       return this.numberOfSeats;
    }
 }
 
-export class Honda {
+export class Honda extends Car {
 
-   constructor(private numberOfSeats: number) { }
+   constructor(private numberOfSeats: number) {
+      super();
+   }
 
-   getNumberOfHondaSeats() {
+   getNumberOfSeats() {
       return this.numberOfSeats;
    }
 }
 
 
-export class Volvo {
+export class Volvo extends Car {
 
-   constructor(private numberOfSeats: number) { }
+   constructor(private numberOfSeats: number) {
+      super();
+   }
 
-   getNumberOfVolvoSeats() {
+   getNumberOfSeats() {
+      return this.numberOfSeats;
+   }
+}
+
+
+export class Ford extends Car {
+
+   constructor(private numberOfSeats: number) {
+      super();
+   }
+
+   getNumberOfSeats() {
       return this.numberOfSeats;
    }
 }
