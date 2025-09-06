@@ -90,3 +90,53 @@ innecesarios.
 - Si los clientes de una interfaz no utilizan todos los métodos que esta define.
 
 ## Dependency Inversion Principle (Principio de inversión de dependencias) (DIP)
+
+> "Los módulos de alto nivel no deberían depender de módulos de bajo nivel.
+> Ambos deben depender de abstracciones. Las abstracciones no deberían depender
+> de los detalles. Los detalles deberían depender de las abstracciones." -
+> Robert C. Martin
+
+Los componentes más importantes son aquellos centrados en resolver el problema
+subyacente al negocio, es decir la capa dominio. Los menos importantes son las
+que están próximos a la infraestructura, es decir, aquellos relacionados con la
+UI, la persistencia, la comunicación con APIs externas, etc.
+
+Ej: Si quisiéramos cambiar de una base de datos de archivos JSON a MongoDB, no
+deberíamos tener que modificar la lógica de negocio, sino solo la implementación
+de la persistencia. No deberíamos tener que tocar el código de la capa de
+dominio, solo modificar el adaptador correspondiente.
+
+Ej: Si un web service necesita cambiar la forma en que se serializan los datos,
+no debería tener que modificar la lógica de negocio, sino solo la implementación
+de la serialización, nuevamente modificando el adaptador correspondiente no el
+código de la capa de dominio.
+
+Ej: Cambiar de React a Angular no debería de afectar las demás capas ni la
+lógica de negocio.
+
+### Depender de abstracciones
+
+Nos estamos refiriendo a clases abstractas o interfaces.
+
+Uno de los motivos más importantes por el cual las reglas de negocio o capa de
+dominio deben depender de estas y no de concreciones es que aumenta su
+tolerancia al cambio.
+
+**¿Por qué obtenemos este beneficio?**
+
+Cada cambio en un componente abstracto implica un cambio en su implementación.
+
+Por el contrario, los cambios en implementaciones concretas, la mayoría de las
+veces, no requieren cambios en las interfaces que implementan.
+
+### Inyección de dependencias
+
+Dependencia en programación, significa que un módulo o componente requiere de
+otro para poder realizar su trabajo.
+
+En algún momento nuestro programa o aplicación llegará a estar formado por
+muchos módulos. Cuando esto pase, es cuando debemos usar inyección de
+dependencias.
+
+**Es mejor inyectar dependencias en el constructor de la clase a inicializar la
+dependencia directamente dentro de la clase.**
