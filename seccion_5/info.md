@@ -75,4 +75,12 @@ Liskov, recibió el premio Turing en 2008.
 
 ## Interface Segregation Principle (Principio de segregación de interfaces) (ISP)
 
+> "Los clientes no deberían verse forzados a depender de interfaces que no
+> utilizan" - Robert C. Martin
+
+Este principio establece que es mejor tener muchas interfaces específicas en
+lugar de una única interfaz general. Esto permite que las clases implementen
+solo los métodos que realmente necesitan, evitando la implementación de métodos
+innecesarios.
+
 ## Dependency Inversion Principle (Principio de inversión de dependencias) (DIP)
