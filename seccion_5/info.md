@@ -19,6 +19,16 @@ al cambio.
 
 > "Tener una única responsabilidad no significa hacer una única cosa"
 
+### Como detectar violaciones SRP
+
+- Nombres de clases y/o módulos demasiado genéricos.
+- Cambios en el código suelen afectar la clase o módulo completo.
+- La clase involucra múltiple capas (presentación, dominio, infraestructura,
+  datos).
+- Número elevado de importaciones.
+- Cantidad elevada de métodos públicos.
+- Excesivo número de líneas de código.
+
 ## Open/Closed Principle (Principio de abierto/cerrado) (OCP)
 
 ## Liskov Substitution Principle (Principio de sustitución de Liskov) (LSP)
