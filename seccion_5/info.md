@@ -31,6 +31,29 @@ al cambio.
 
 ## Open/Closed Principle (Principio de abierto/cerrado) (OCP)
 
+> Es un principio que depende mucho del contexto.
+
+Establece que las entidades de software (clases, módulos, funciones, etc.) deben
+estar abiertas para la extensión, pero cerradas para la modificación.
+
+La forma más sencilla de demostrar este principio es considerar un método que
+hace una cosa.
+
+Ejemplo:
+
+- Escribir en un archivo de texto hola.txt
+- Nuevos requisitos son escribir en un archivo adios.txt
+- Si necesitamos cambiar la función para cambiar el nombre del archivo,
+  tendríamos que modificar el código existente, esto viola el principio de
+  abierto/cerrado.
+- Para cumplir el principio la función o método debería recibir el nombre del
+  archivo como parámetro.
+- La modificación se hace en la llamada a la función, no en la función misma.
+
+El principio de abierto/cerrado también se puede lograr de muchas otras maneras,
+incluso mediante el uso de la herencia o mediante patrones de diseño de
+composición como el patrón de estrategia.
+
 ## Liskov Substitution Principle (Principio de sustitución de Liskov) (LSP)
 
 ## Interface Segregation Principle (Principio de segregación de interfaces) (ISP)
