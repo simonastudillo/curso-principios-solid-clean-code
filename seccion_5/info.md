@@ -63,6 +63,16 @@ composición como el patrón de estrategia.
 
 ## Liskov Substitution Principle (Principio de sustitución de Liskov) (LSP)
 
+> "Las funciones que utilicen punteros o referencias a clases base deben ser
+> capaces de usar objetos de clases derivadas sin saberlo" - Robert C. Martin
+
+El nombre proviene de la Doctora Jane Huberman, más conocida como Barbara
+Liskov, recibió el premio Turing en 2008.
+
+> "Siendo U un subtipo de T, cualquier instancia de T debería poder ser
+> sustituida por cualquier instancia de U sin alterar las propiedades del
+> sistema".
+
 ## Interface Segregation Principle (Principio de segregación de interfaces) (ISP)
 
 ## Dependency Inversion Principle (Principio de inversión de dependencias) (DIP)
