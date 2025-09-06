@@ -1,9 +1,9 @@
-import { Tesla, Audi, Toyota, Honda } from './03-liskov-b.ts';
+import { Tesla, Audi, Toyota, Honda, Volvo } from './03-liskov-b.ts';
 
 
 (() => {
 
-   const printCarSeats = (cars: (Tesla | Audi | Toyota | Honda)[]) => {
+   const printCarSeats = (cars: (Tesla | Audi | Toyota | Honda | Volvo)[]) => {
 
       for (const car of cars) {
 
@@ -23,6 +23,10 @@ import { Tesla, Audi, Toyota, Honda } from './03-liskov-b.ts';
             console.log('Honda', car.getNumberOfHondaSeats())
             continue;
          }
+         if (car instanceof Volvo) {
+            console.log('Volvo', car.getNumberOfVolvoSeats())
+            continue;
+         }
 
       }
    }
@@ -32,6 +36,7 @@ import { Tesla, Audi, Toyota, Honda } from './03-liskov-b.ts';
       new Audi(2),
       new Toyota(5),
       new Honda(5),
+      new Volvo(2),
    ];
 
 

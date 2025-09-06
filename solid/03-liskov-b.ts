@@ -1,3 +1,5 @@
+
+
 export class Tesla {
 
    constructor(private numberOfSeats: number) { }
@@ -30,6 +32,16 @@ export class Honda {
    constructor(private numberOfSeats: number) { }
 
    getNumberOfHondaSeats() {
+      return this.numberOfSeats;
+   }
+}
+
+
+export class Volvo {
+
+   constructor(private numberOfSeats: number) { }
+
+   getNumberOfVolvoSeats() {
       return this.numberOfSeats;
    }
 }
