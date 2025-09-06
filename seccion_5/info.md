@@ -83,4 +83,10 @@ lugar de una única interfaz general. Esto permite que las clases implementen
 solo los métodos que realmente necesitan, evitando la implementación de métodos
 innecesarios.
 
+### Detectar violaciones ISP
+
+- Si las interfaces que diseñamos nos obligan a violar los principios de
+  responsabilidad única y substitución de Liskov.
+- Si los clientes de una interfaz no utilizan todos los métodos que esta define.
+
 ## Dependency Inversion Principle (Principio de inversión de dependencias) (DIP)
