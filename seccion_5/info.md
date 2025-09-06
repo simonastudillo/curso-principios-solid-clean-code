@@ -54,6 +54,13 @@ El principio de abierto/cerrado también se puede lograr de muchas otras maneras
 incluso mediante el uso de la herencia o mediante patrones de diseño de
 composición como el patrón de estrategia.
 
+### Como detectar violaciones OCP
+
+- Cambios normalmente afectan nuestra clase o módulo.
+- Cuando una clase o módulo afecta muchas capas (Presentación, almacenamiento,
+  etc).
+- La clase o módulo tiene un alto acoplamiento con otras clases o módulos.
+
 ## Liskov Substitution Principle (Principio de sustitución de Liskov) (LSP)
 
 ## Interface Segregation Principle (Principio de segregación de interfaces) (ISP)
